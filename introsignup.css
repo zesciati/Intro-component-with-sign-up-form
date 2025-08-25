@@ -1,0 +1,87 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+:root{
+  /* color */
+  --clr-red-400: oklch(0.7353 0.1621 21.84);
+  --clr-green-400: oklch(0.7525 0.154 159.77);
+  --clr-purple-700: oklch(0.4986 0.124 287.12);
+  --clr-gray-900: oklch(0.3621 0.0228 292.1);
+  --clr-purple-350: oklch(0.7871 0.0413 290);
+  --clr-white: oklch(1 0 0);
+
+  /* weights */
+  --weight-400:400;
+  --weight-500:500;
+  --weight-600:600;
+  --weight-700:700;
+
+    /* spacing */
+  --space-3xs: clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem);
+  --space-2xs: clamp(0.5625rem, 0.5408rem + 0.1087vw, 0.625rem);
+  --space-xs: clamp(0.875rem, 0.8533rem + 0.1087vw, 0.9375rem);
+  --space-s: clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem);
+  --space-m: clamp(1.6875rem, 1.6223rem + 0.3261vw, 1.875rem);
+  --space-l: clamp(2.25rem, 2.163rem + 0.4348vw, 2.5rem);
+  --space-xl: clamp(3.375rem, 3.2446rem + 0.6522vw, 3.75rem);
+  --space-2xl: clamp(4.5rem, 4.3261rem + 0.8696vw, 5rem);
+  --space-3xl: clamp(6.75rem, 6.4891rem + 1.3043vw, 7.5rem);
+
+}
+
+
+
+body::before{
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--clr-red-400);
+  background-image: url(images/bg-intro-mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+}
+
+main{
+  display: flex;
+  align-items:center;
+  padding: var(--space-m);
+  flex-direction: column;
+}
+
+/* -------------------------------- section 1 ------------------------------- */
+.judul, .deskripsi{
+  color: var(--clr-white);
+}
+
+section .judul{
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+section .deskripsi{
+  text-align: center;
+  font-weight: var(--weight-500);
+}
+
+
+/* -------------------------------- section-2 ------------------------------- */
+
