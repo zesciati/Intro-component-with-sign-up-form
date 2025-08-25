@@ -85,3 +85,15 @@ section .deskripsi{
 
 /* -------------------------------- section-2 ------------------------------- */
 
+.section-2{
+  margin-top: 4rem;
+}
+
+.section-2 p{
+  color: var(--clr-white);
+  background-color: var(--clr-purple-700);
+  border-radius: 5px;
+  padding-inline: var(--space-xl);
+  padding-block: var(--space-s);
+  text-align: center;
+}
