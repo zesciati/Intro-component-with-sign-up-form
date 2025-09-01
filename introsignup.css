@@ -19,6 +19,7 @@ html {
   --clr-gray-900: oklch(0.3621 0.0228 292.1);
   --clr-purple-350: oklch(0.7871 0.0413 290);
   --clr-white: oklch(1 0 0);
+  --clr-shadow: oklch(0.7017 0.1895 23.33 / 100%);
 
   /* weights */
   --weight-400:400;
@@ -86,7 +87,7 @@ section .deskripsi{
 /* -------------------------------- section-2 ------------------------------- */
 
 .section-2{
-  margin-top: 4rem;
+  margin-top: 3.4rem;
 }
 
 .section-2 p{
@@ -96,4 +97,5 @@ section .deskripsi{
   padding-inline: var(--space-xl);
   padding-block: var(--space-s);
   text-align: center;
+  box-shadow: 0px 10px var(--clr-shadow); /* tdk keliatan backgroundnya */
 }
