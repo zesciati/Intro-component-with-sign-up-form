@@ -1,2 +1,4 @@
 Frontend:
-  ☐ form ui
+  ✔ form ui @done(25-09-04 00:26)
+  desktop:
+    ☐ membuat grid dengan grid-template-areas
