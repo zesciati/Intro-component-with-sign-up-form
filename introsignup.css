@@ -99,3 +99,7 @@ section .deskripsi{
   text-align: center;
   box-shadow: 0px 10px var(--clr-shadow); /* tdk keliatan backgroundnya */
 }
+
+.section-3{
+  background-color: var(--clr-white);
+}
