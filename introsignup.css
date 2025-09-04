@@ -81,18 +81,23 @@ main{
   flex-direction: column;
 }
 
+
 /* -------------------------------- section 1 ------------------------------- */
 .judul, .deskripsi{
   color: var(--clr-white);
 }
 
-section .judul{
+.section-1{
+  grid-area: section-1;
+}
+
+.section-1 .judul{
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 1rem;
   font-size: var(--step-0-judul);
 }
-section .deskripsi{
+.section-1 .deskripsi{
   text-align: center;
   font-weight: var(--weight-500);
   font-size: var(--step-1);
@@ -103,6 +108,7 @@ section .deskripsi{
 
 .section-2{
   margin-top: 3.4rem;
+  grid-area: section-2;
 }
 
 .section-2 p{
@@ -123,7 +129,8 @@ section .deskripsi{
   margin-top: 1.5rem;
   padding: var(--space-m);
   border-radius: var(--border-rds);
-    box-shadow: 0px 10px var(--clr-shadow); /* still not see the background */
+  box-shadow: 0px 10px var(--clr-shadow); /* still not see the background */
+  grid-area: section-3;
 
 }
 
@@ -170,4 +177,33 @@ form input:not([placeholder="First Name"]){
 form input::placeholder{
   font-weight: 600;
   font-family: "Poppins", sans-serif;
+}
+
+/* ------------------------------- desktop ui ------------------------------- */
+
+@media screen and (min-width:769px) {
+  main{
+    padding: var(--space-xl);
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-areas: 
+    "section-1 section-2" 
+    "section-1 section-3"
+    ;
+  }
+
+  .section-1 .judul , .section-1 .deskripsi{
+    text-align: left;
+  }
+
+  .section-1 .judul{
+    font-size: 3.6rem;
+  }
+  .section-1 .deskripsi{
+  font-size: 1.2rem;
+
+  }
+
+  
 }
