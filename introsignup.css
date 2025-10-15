@@ -145,6 +145,13 @@ main{
   color: var(--clr-red-400);
 }
 
+.successed p{
+  color: var(--clr-green-400);
+  font-size: var(--step-1);
+  padding: var(--space-3xs);
+  display: none;
+}
+
 form button{
   text-transform: uppercase;
   background-color: var(--clr-green-400);

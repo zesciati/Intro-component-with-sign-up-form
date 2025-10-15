@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="introsignup.css">
+  <script src="introsignup.js" defer></script>
   <title>Zakk | Intro component with sign up form</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,11 +29,18 @@
 
     <section class="section-3">
       <form action="">
-        <input type="text" placeholder="First Name">
-        <input type="text" placeholder="Last Name">
-        <input type="email" placeholder="Email Address">
-        <input type="password" placeholder="Password">
-        <button>claim your free trial</button>
+        <article class="successed">
+          <p>Thanks for completing the form. We'll be in touch soon</p>
+        </article>
+        <input type="text" placeholder="First Name" id="firstName" >
+          <p class="error"></p>
+        <input type="text" placeholder="Last Name" id="lastName">
+          <p class="error"></p>
+        <input type="email" placeholder="Email Address" id="email">
+          <p class="error"></p>
+        <input type="password" placeholder="Password" id="pass">
+          <p class="error"></p>
+        <button type="submit" id="submit">claim your free trial</button>
       </form>
       <p>By clicking the button, you are agreeing to our <span >Terms and Services</span></p>
     </section>
