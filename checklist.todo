@@ -3,11 +3,11 @@ Frontend:
   desktop:
     ✔ membuat grid dengan grid-template-areas @done(25-09-04 15:52)
   ✔ memanggil di js @done(25-10-15 23:38)
-  ☐ Membuat validasi input
-    ☐ liveValidate input text firstName
-    ☐ liveValidate input text lastName
-    ☐ liveValidate input email email
-    ☐ liveValidate input password password
+  ✔ Membuat validasi input @done(25-10-21 23:07)
+    ✔ liveValidate input text firstName @done(25-10-21 23:07)
+    ✔ liveValidate input text lastName @done(25-10-21 23:07)
+    ✔ liveValidate input email email @done(25-10-21 23:07)
+    ✔ liveValidate input password password @done(25-10-21 23:07)
 
 Backend:
-  ☐ Membuat collection untuk penyimpanan intro sign up
+  ✔ Membuat collection untuk penyimpanan intro sign up @done(25-10-19 21:57)
