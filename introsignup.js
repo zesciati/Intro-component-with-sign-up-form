@@ -162,17 +162,47 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (isFirstNameValid && isEmailValid && isPassValid) {
 
-      submitBtn.disabled = true; // Disable the submit button
-      submitBtn.textContent = "Submitting...";
+      submit.disabled = true; // Disable the submit button
+      submit.textContent = "Submitting...";
 
-      try{
+      try {
 
-      }catch(error){
+        const api = await fetch('https://directus-for-all.zakyabiyyu.com/items/form_intro_signup', {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Authorization": "Bearer rhBgSqH0o9CVvMTT8Z8L4CeVc159G1SL",
+          },
+          body: JSON.stringify({
+            "firstname": firstName.value.trim(),
+            "lastname": lastName.value.trim(),
+            "email": email.value.trim(),
+            "password": pass.value.trim(),
+          })
+        });
 
-      }finally{
-        
+        if (api.ok) {
+          successState.style.display = "block";
+          form.reset();
+
+          setTimeout(() => {
+            successState.style.display = "none";
+          }, 3000);
+        } else {
+          console.error("API Error:", api.status, api.statusText);
+        }
+
+
+      } catch (error) {
+        console.error("Fetch error", error);
+
+      } finally {
+        submit.disabled = false; // Re-enable the submit button
+        submit.textContent = "Submit"; // Re-enable the submit button
       }
 
+    } else {
+      console.log("Form validation failed. Please check the fields.")
     }
 
   })
